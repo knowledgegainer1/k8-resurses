@@ -5,14 +5,12 @@ metadata:
   labels:
     COURSE: DevOps
     Trainer: "me ef"
-    annotations:
-      com.roboshop.trainer: "1212hrs"
-      jenkins.url: "https://jenkins.com/roboshop"
+  annotations:
+    com.roboshop.trainer: "1212hrs"
+    jenkins.url: "https://jenkins.com/roboshop"
 spec:
   containers:
-  - name: annota
-    image: nginx
-    ports:
-    - containerPort: 80
-  
-  
+    - name: annota
+      image: nginx
+      ports:
+        - containerPort: 80
