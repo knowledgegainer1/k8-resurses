@@ -4,7 +4,7 @@ metadata:
   name: annotations
   labels:
     COURSE: DevOps
-    Trainer: "me ef"
+    Trainer: me
   annotations:
     com.roboshop.trainer: "1212hrs"
     jenkins.url: "https://jenkins.com/roboshop"
