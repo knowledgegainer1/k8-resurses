@@ -7,10 +7,10 @@ metadata:
     app: ndport
 spec:
   containers:
-    - name: fornodeport
-      image: nginx
-      ports:
-      - ContainerPort: 80
+  - name: fornodeport
+    image: nginx
+    ports:
+    - ContainerPort: 80
 ---
 apiVersion: v1
 kind: Service
