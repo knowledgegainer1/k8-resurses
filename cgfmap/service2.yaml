@@ -10,7 +10,7 @@ spec:
   - name: fornginx
     image: nginx
     ports:
-    - containerPort: 80
+     - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -23,7 +23,7 @@ spec:
     type: container2
     purpose: web2
   ports:
-    - protocol: "tcp"
+    - protocol: "TCP"
       port: 80
       targetPort: 80
 
