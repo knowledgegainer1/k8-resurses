@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: container2
+  labels:
+    type: container2
+    purpose: web2
+spec:
+  containers:
+    - name: fornginx
+      image: nginx
+      ports:
+      - ContainerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginxservice2
+  labels:
+    about: servicefornginx
+spec:
+  selector:
+    type: container2
+    purpose: web2
+  ports:
+    - protocol: "tcp"
+      port: 81
+      targetPort: 80
+
+     

@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: container
+  labels:
+    type: container
+    purpose: web
+  annotations:
+    examle: "sample %#$%^"
+spec:
+  containers:
+    - name: callaed 
+      image: nginx
+      ports:
+      - ContainerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginxservice
+  labels:
+    type: container
+spec:
+  selector:
+    type: container
+    purpose: web
+  ports:
+    - protocol: "tcp"
+      port: 80
+      targetPort: 80
+
+     

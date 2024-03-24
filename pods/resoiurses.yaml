@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: resourses
+  labels:
+    COURSE: DevOps
+    Trainer: me
+  annotations:
+    com.roboshop.trainer: "1212hrs"
+    jenkins.url: "https://jenkins.com/roboshop"
+spec:
+  containers:
+    - name: annota
+      image: nginx
+      ports:
+        - containerPort: 80
+      resourses:
+        requests:
+          cpu: "100m"
+          memory: "64Mi"
+        limits:
+          cpu: "200m"
+          memory: "128Mi"
