@@ -22,7 +22,7 @@ metadata:
     type: container
 spec:
   selector:
-    type: container
+    type: container #yfegwe
     purpose: web
   ports:
     - protocol: "tcp"
