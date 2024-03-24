@@ -10,7 +10,7 @@ spec:
   - name: fornodeport
     image: nginx
     ports:
-    - ContainerPort: 80
+    - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
